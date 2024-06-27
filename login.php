@@ -19,7 +19,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 $user = $_POST['user'];
 $user = $_POST['senha'];
 
-if($user === 'adm' && $senha === '123'){
+if (!empty($Usuario) && !empty($senha)) {
+
+    $valid_username = "adm";
+    $valid_password = "12345";
+}
+if($user === $valid_username && $senha === $valid_password){
     echo "entrou";
 }else{
     echo "bb";
