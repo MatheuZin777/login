@@ -1,0 +1,26 @@
+
+body{
+    background-color: antiquewhite;
+    font-size: 17px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5%;
+    
+}
+
+input{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+}
+div{
+    display: flex;
+    justify-content: center;
+}
+
