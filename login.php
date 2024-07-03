@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -12,26 +12,63 @@
         padding: 0;
         box-sizing: border-box;
     }
+    body {
+        background-color: gray !important;;
+    }
 
     .cont {
         width: 300px;
         margin: auto;
         padding: 20px;
-        background-color: #f2f2f2;
-        border-radius: 5px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-        height: 100vh;
+        height: 90vh;
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        font-family: Arial, sans-serif;
+        color: #333;
+        font-size: 18px;
     }
 
     form {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
-        height: 100vh;
+        width: 100%;
+        padding: 20px;
+        background-color: #f2f2f2;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        height: 200px;
+    }
+
+    form input {
+        width: 100%;
+        padding: 7px;
+        margin-bottom: 10px;
+        letter-spacing: 0.5px;
+    }
+
+    #btn{
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-top: 10px;
+        width: 100%;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s ease;
+    }
+    #btn:hover {
+        background-color: #439146;
     }
 </style>
 
@@ -41,7 +78,7 @@
             <h1>Login</h1>
             <input type="text" placeholder="Username" name="user">
             <input type="text" placeholder="Senha" name="senha">
-            <input type="submit" value="Login">
+            <input id="btn" type="submit" value="Login">
         </form>
     </div>
 
